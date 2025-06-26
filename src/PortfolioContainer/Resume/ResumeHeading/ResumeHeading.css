@@ -1,0 +1,44 @@
+.resume-main-heading {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume-main-heading span {
+  color: var(--dark-orange);
+  font-size: 1rem;
+  font-family: "Poppins SemiBold";
+}
+
+.resume-sub-heading {
+  font-size: 0.875rem;
+  font-family: "Poppins SemiBold";
+  color: var(--black);
+  margin: 0.625rem 0 0 1.75rem;
+}
+
+.resume-heading-description {
+  font-size: 0.75rem;
+  text-align: justify;
+}
+
+.resume-heading-description-header {
+  font-size: 0.75rem;
+  text-align: justify;
+  font-family: "Poppins SemiBold";
+  margin: 0.625rem 0 0.625rem 0;
+}
+
+.resume-title-section {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.heading-date {
+  background-color: var(--resume-blue);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  border-radius: 0.875rem;
+  color: var(--white);
+}

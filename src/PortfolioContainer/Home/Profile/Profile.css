@@ -1,0 +1,171 @@
+.profile-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 10%;
+  min-height: fit-content;
+  margin: 0 0.625rem 0 0.625rem;
+}
+
+.profile-detail-section {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.profile-details-name {
+  font-size: 1.5rem;
+  font-family: "Poppins SemiBold";
+}
+
+.profile-details-role {
+  display: flex;
+  flex-direction: column;
+  margin: 0.875rem 0 1.5rem 0;
+}
+
+.profile-details-role h1 {
+  font-size: 2.5rem;
+  font-family: cursive;
+}
+
+.profile-details-role-header-section {
+  color: (--white);
+}
+
+.highlighted-text {
+  color: var(--highlighted-blue);
+}
+
+.profile-role-description {
+  font-size: 1.188rem;
+  margin: 0.313rem 0 0 0;
+  font-family: "Poppins Light";
+  display: -webkit-box; /* Required for WebKit */
+  display: box; /* Older spec (just in case) */
+  -webkit-box-orient: vertical; /* WebKit-specific */
+  box-orient: vertical; /* Older spec (not widely used) */
+  -webkit-line-clamp: 3; /* WebKit-specific */
+  line-clamp: 3; /* Standard (experimental in Firefox) */
+  overflow: hidden; /* Required to hide overflowed text */
+}
+
+.profile-button-section .highlighted-btn {
+  margin: 0 0 0 1.75rem;
+}
+
+.profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.063rem 0 0 var(--white);
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+  margin: 0 0 0 6.25rem;
+}
+
+.profile-picture-background {
+  height: 92%;
+  width: 92%;
+  background-image: url("../../../assets/home/myImage.png");
+  background-size: cover;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.profile-picture-background:hover {
+  transform: scale(1.07);
+  transition: 0.5s ease-out;
+}
+
+.colz .colz-icon i {
+  color: white;
+  padding: 0.5rem;
+  padding-left: 0;
+}
+
+.colz .colz-icon i:hover {
+  transform: scale(1.5);
+}
+
+/* ipad pro*/
+@media screen and (max-width: 69.375rem) {
+  .profile-picture {
+    height: 15rem;
+    width: 20rem;
+    margin: 0 0 0 5rem;
+  }
+
+  .profile-details-name {
+    font-size: 1.25rem;
+  }
+
+  .profile-details-name .primary-text {
+    font-size: 0.75rem;
+  }
+
+  .profile-button-section .btn {
+    width: 7.5rem;
+    padding: 0.688rem 0;
+  }
+}
+
+/* iPad */
+@media screen and (max-width: 56.875rem) {
+  .profile-picture {
+    height: 20rem !important;
+    margin: 0 0 0 0.25rem;
+  }
+
+  .profile-details-role h1 {
+    font-size: 1.5rem;
+  }
+  .profile-role-description {
+    font-size: 1rem;
+  }
+}
+
+/* iPhone 14 Pro */
+@media screen and (max-width: 50.625rem) {
+  .profile-picture {
+    margin: 0 !important;
+  }
+
+  .profile-detail-section {
+    flex-direction: column-reverse;
+    margin: 2.5rem 0 0 0;
+  }
+
+  .profile-button-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .profile-button-section .highlighted-btn {
+    margin: 0 !important;
+  }
+
+  .profile-details {
+    margin: 1.563rem 0 0;
+  }
+
+  .profile-details-role,
+  .profile-button-section {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 23.438rem) {
+  .profile-picture {
+    height: 17.188rem;
+    width: 17.188rem;
+    margin-top: -5.625rem;
+  }
+
+  .profile-details {
+    width: 90%;
+  }
+}

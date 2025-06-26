@@ -1,0 +1,120 @@
+.about-me-container {
+  margin-top: 3.125rem;
+}
+
+.about-me-card {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  font-size: 0.75rem;
+  background-color: #ffffff;
+  mask: radial-gradient(
+      2.5rem at 2.5rem 2.5rem,
+      #0000 98%,
+      #000
+    ) -2.5rem -2.5rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg stroke='%23CCC' stroke-width='0' %3E%3Crect fill='%23F5F5F5' x='-60' y='-60' width='110' height='240'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.about-me-image {
+  height: auto;
+  width: 16.25rem;
+  border: 0.313rem solid var(--highlighted-blue);
+}
+
+.about-me-image-container {
+  margin-right: 3.125rem;
+}
+
+.table-row {
+  display: flex;
+  flex-flow: row nowrap;
+  width: auto;
+}
+
+.table-colz {
+  display: flex;
+  flex-flow: column;
+}
+.about-me-section {
+  font-family: "Poppins Regular";
+  gap: 0.938rem;
+}
+
+.highligted-text {
+  color: var(--highlighted-blue);
+}
+
+.description-title {
+  font-family: "Poppins Bold";
+  font-size: 1.563rem;
+}
+
+.about-me-bullet-container {
+  margin-bottom: 0.313rem;
+}
+
+.flower {
+  display: inline-block;
+  width: 0.75rem;
+  aspect-ratio: 1;
+  --g: /41.422% 41.422% radial-gradient(#000 calc(71% - 0.063rem), #0000 71%)
+    no-repeat;
+  mask:
+    100% 50% var(--g),
+    50% 100% var(--g),
+    0% 50% var(--g),
+    50% 0% var(--g),
+    radial-gradient(100% 100%, #000 20.711%, #0000 calc(20.711% + 0.063rem));
+  background: var(--highlighted-blue);
+  margin-right: 0.313rem;
+}
+
+@media screen and (max-width: 50.625rem) {
+  .about-me-card {
+    flex-wrap: wrap;
+    gap: 1.875rem;
+  }
+
+  .about-me-image-container {
+    margin-top: 3.125rem;
+    margin-right: 0;
+  }
+
+  .about-me-section {
+    margin: 0.625rem;
+    margin-bottom: 1.875rem;
+  }
+
+  .about-me-section div {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 34.375rem) {
+  .about-me-image {
+    width: 9.375rem;
+  }
+
+  .description-title {
+    font-size: 0.938rem;
+  }
+
+  .about-me-section {
+    gap: 0.5rem;
+  }
+
+  .about-me-card {
+    /* mask: none; */
+    width: 90%;
+    /* background-image: none; */
+    /* background-color: transparent; */
+  }
+
+  .about-me-image-container {
+    margin-top: 1.25rem;
+  }
+}
