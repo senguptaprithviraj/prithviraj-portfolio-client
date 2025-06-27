@@ -1,7 +1,4 @@
 import "./Profile.css";
-import client from "../../../lib/sanity";
-import type { SanityDocument } from "@sanity/client";
-import { useEffect } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import ScrollService from "../../../utilities/scrollService";
 
