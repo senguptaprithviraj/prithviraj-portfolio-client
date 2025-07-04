@@ -24,6 +24,9 @@ const Header = () => {
           onClick={() => switchScreen(i, screen)}
         >
           <span>{screen.screenName}</span>
+          {i < TOTAL_SCREENS.length - 1 && (
+            <span className="screen-name-separator">|</span>
+          )}
         </div>
       );
     });

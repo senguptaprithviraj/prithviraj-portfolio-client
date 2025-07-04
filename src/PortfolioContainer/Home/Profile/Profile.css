@@ -63,7 +63,7 @@
   border-radius: 50%;
   height: 20rem;
   width: 20rem;
-  margin: 0 0 0 6.25rem;
+  margin: 0;
 }
 
 .profile-picture-background {
@@ -92,11 +92,10 @@
 }
 
 /* ipad pro*/
-@media screen and (max-width: 69.375rem) {
+@media screen and (max-width: 1110px) {
   .profile-picture {
     height: 15rem;
     width: 20rem;
-    margin: 0 0 0 5rem;
   }
 
   .profile-details-name {

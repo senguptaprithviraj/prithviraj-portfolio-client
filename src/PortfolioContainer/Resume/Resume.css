@@ -13,11 +13,9 @@
   display: flex;
   height: 25rem;
   background-color: #ffffff;
-  mask: radial-gradient(
-      2.5rem at 2.5rem 2.5rem,
-      #0000 98%,
-      #000
-    ) -2.5rem -2.5rem;
+  border: 0.313rem solid var(--highlighted-blue);
+  border-left: 0;
+  mask: radial-gradient(2.5rem at 2.5rem 2.5rem, #0000 98%, #000) -2.5rem -2.5rem;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg stroke='%23CCC' stroke-width='0' %3E%3Crect fill='%23F5F5F5' x='-60' y='-60' width='110' height='240'/%3E%3C/g%3E%3C/svg%3E");
 }
 
@@ -56,7 +54,7 @@
   display: flex;
   align-items: center;
   /* cursor: pointer; */
-  background-color: var(--resume-dark-blue);
+  background-color: var(--secondary-blue);
   height: 2.5rem;
   margin: 0.938rem 0;
   padding: 0 0.5rem;
@@ -80,7 +78,7 @@
   width: 2.125rem;
   height: 100%;
   z-index: 1;
-  background-color: var(--resume-dark-blue);
+  background-color: var(--secondary-blue);
   position: absolute;
 }
 
@@ -98,13 +96,8 @@
   display: inline-block;
   width: 0.75rem;
   height: 0.75rem;
-  --g: /41.422% 41.422% radial-gradient(#000 calc(71% - 0.063rem), #0000 71%)
-    no-repeat;
-  mask:
-    100% 50% var(--g),
-    50% 100% var(--g),
-    0% 50% var(--g),
-    50% 0% var(--g),
+  --g: /41.422% 41.422% radial-gradient(#000 calc(71% - 0.063rem), #0000 71%) no-repeat;
+  mask: 100% 50% var(--g), 50% 100% var(--g), 0% 50% var(--g), 50% 0% var(--g),
     radial-gradient(100% 100%, #000 20.711%, #0000 calc(20.711% + 0.063rem));
   /* background: var(--highlighted-blue); */
   background: var(--black);
@@ -121,7 +114,7 @@
 .skill-parent span {
   font-family: "Poppins Bold";
   font-size: 1rem;
-  color: #ff5823;
+  color: var(--secondary-blue);
 }
 .resume-bullets-details {
   width: 100%;
@@ -156,6 +149,7 @@
     flex-direction: column;
     margin: 1.875rem 0;
     align-items: center;
+    border: 0;
   }
 
   .resume-bullet-details {

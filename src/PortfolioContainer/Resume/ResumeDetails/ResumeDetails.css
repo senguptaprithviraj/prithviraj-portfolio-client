@@ -9,14 +9,14 @@
   position: relative;
   height: 0.938rem;
   width: 70%;
-  background-color: #ff5823;
+  background-color: var(--highlighted-blue);
 }
 
 .skill-percentage .active-percentage-bar {
   height: 0.938rem;
   transition: 0.8s ease;
   position: absolute;
-  background-color: var(--resume-dark-blue);
+  background-color: var(--secondary-blue);
 }
 
 .programming-skills-container {

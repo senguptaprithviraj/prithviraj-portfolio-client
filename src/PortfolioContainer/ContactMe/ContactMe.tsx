@@ -62,6 +62,8 @@ const ContactMe = ({ id }: ScreenComponentType) => {
         setMessage("");
       }
     } catch (error) {
+      setBool(false);
+      setBanner("Something went wrong. Please try again later.");
       console.log(error);
     }
   };
@@ -72,7 +74,7 @@ const ContactMe = ({ id }: ScreenComponentType) => {
         <ScreenHeading
           title="Contact "
           highlightedTitle="Me"
-          subHeading="Feel free o contact me for any inquiries or questions."
+          subHeading="If you require any clarification regarding my CV, please don’t hesitate to contact me."
         />
 
         <div className="central-form">
@@ -129,7 +131,7 @@ const ContactMe = ({ id }: ScreenComponentType) => {
 
             <div className="back-form">
               <div className="img-back">
-                <h4>Send your email here</h4>
+                <h4>Feel free to send me an email</h4>
                 <img src={contactMeBackground} alt="background not found" />
               </div>
 

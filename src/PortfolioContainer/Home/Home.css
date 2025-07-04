@@ -1,6 +1,11 @@
 .home-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 41.875rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .home-container {
+    gap: 100px;
+  }
 }
