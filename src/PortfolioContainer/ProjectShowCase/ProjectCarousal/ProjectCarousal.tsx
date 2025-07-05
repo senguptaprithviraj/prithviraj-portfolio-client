@@ -27,9 +27,17 @@ const ProjectCarousal = () => {
 
   return (
     <div className="project-carousel-container">
-      <button onClick={() => scroll(-1)} className="arrow-button left"></button>
+      <button
+        onClick={() => scroll(-1)}
+        className="arrow-button left"
+        aria-label="Scroll left"
+      ></button>
 
-      <button onClick={() => scroll(1)} className="arrow-button right"></button>
+      <button
+        onClick={() => scroll(1)}
+        className="arrow-button right"
+        aria-label="Scroll right"
+      ></button>
 
       <div className="carousel-card-section" ref={containerRef}>
         <motion.div

@@ -18,14 +18,15 @@
   --toast-success: #0cbfae;
   --loader-color: #0cbfae;
   --highlighted-blue: #a1c1ff;
+  --header-blue: #4d8aff;
   --primary-blue: #015bb5;
   --secondary-blue: #009be9;
-  --resume-dark-blue: #18375c;
+  --resume-dark-blue: #303236;
   --resume-blue: #204b7f;
 }
 
 .page-background {
-  background-image: url("./assets/home/bg.jpg");
+  background-image: url("./assets/home/bg.webp");
   position: fixed;
   left: 0;
   top: 0;

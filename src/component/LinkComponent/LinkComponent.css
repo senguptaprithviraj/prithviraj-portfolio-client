@@ -1,0 +1,9 @@
+.colz .colz-icon i {
+  color: white;
+  padding: 0.5rem;
+  padding-left: 0;
+}
+
+.colz .colz-icon i:hover {
+  transform: scale(1.5);
+}

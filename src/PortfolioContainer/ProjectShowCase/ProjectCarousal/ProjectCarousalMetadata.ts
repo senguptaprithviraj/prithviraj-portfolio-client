@@ -1,4 +1,4 @@
-import portfolioThumbnail from "../../../assets/project-showcase/portfolio_project.png";
+import portfolioThumbnail from "../../../assets/project-showcase/portfolio_project.webp";
 import dummyThumbnail from "../../../assets/project-showcase/coming_soon.png";
 type Project = {
   title: string;

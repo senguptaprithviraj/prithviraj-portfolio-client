@@ -14,7 +14,7 @@
 }
 
 .highlighted-screen-heading {
-  color: var(--highlighted-blue);
+  color: var(--header-blue);
 }
 
 .screen-sub-heading {

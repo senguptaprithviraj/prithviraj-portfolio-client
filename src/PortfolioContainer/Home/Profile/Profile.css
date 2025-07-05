@@ -69,7 +69,7 @@
 .profile-picture-background {
   height: 92%;
   width: 92%;
-  background-image: url("../../../assets/home/myImage.png");
+  background-image: url("../../../assets/home/myImage.webp");
   background-size: cover;
   border-radius: 50%;
   background-repeat: no-repeat;
@@ -79,16 +79,6 @@
 .profile-picture-background:hover {
   transform: scale(1.07);
   transition: 0.5s ease-out;
-}
-
-.colz .colz-icon i {
-  color: white;
-  padding: 0.5rem;
-  padding-left: 0;
-}
-
-.colz .colz-icon i:hover {
-  transform: scale(1.5);
 }
 
 /* ipad pro*/

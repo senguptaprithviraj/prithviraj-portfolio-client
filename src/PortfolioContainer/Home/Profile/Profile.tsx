@@ -1,6 +1,7 @@
 import "./Profile.css";
 import { Typewriter } from "react-simple-typewriter";
 import ScrollService from "../../../utilities/scrollService";
+import LinkComponent from "../../../component/LinkComponent";
 
 const scrollToHireMe = () => {
   ScrollService.scrollHandler.scrollToSpecificSection("Contact Me");
@@ -12,43 +13,7 @@ const Profile = () => {
       <div className="profile-detail-section">
         <div className="profile-details">
           <div className="colz">
-            <div className="colz-icon">
-              <a
-                href="https://www.linkedin.com/in/prithvirajsengupta"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a
-                href="https://www.facebook.com/prithviraj.sengupta.5/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-facebook-square" aria-hidden="true"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/sengupta.prithviraj/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-              <a
-                href="https://www.youtube.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-youtube-square" aria-hidden="true"></i>
-              </a>
-              <a
-                href="https://x.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-            </div>
+            <LinkComponent />
           </div>
           <div className="profile-details-name">
             <span className="primary-text">

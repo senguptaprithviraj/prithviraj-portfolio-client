@@ -1,6 +1,6 @@
 import "./ContactMe.css";
 
-import contactMeBackground from "../../assets/contact-me/contact-me-bg.png";
+import contactMeBackground from "../../assets/contact-me/contact-me-bg.webp";
 import { ScreenComponentType } from "../../utilities/commonUtils";
 import ScreenHeading from "../../component/ScreenHeading";
 import { Typewriter } from "react-simple-typewriter";
@@ -10,6 +10,7 @@ import { toast } from "react-toastify";
 
 import loaderGif from "../../assets/contact-me/load2.gif";
 import FadeIn from "../../utilities/FadeIn";
+import LinkComponent from "../../component/LinkComponent";
 
 const ContactMe = ({ id }: ScreenComponentType) => {
   const [name, setName] = useState("");
@@ -78,7 +79,7 @@ const ContactMe = ({ id }: ScreenComponentType) => {
         />
 
         <div className="central-form">
-          <div className="col">
+          <div className="col central-form-container">
             <h2 className="title">
               <Typewriter
                 words={["Front-End Developer", "React Developer"]}
@@ -91,60 +92,41 @@ const ContactMe = ({ id }: ScreenComponentType) => {
               />
             </h2>
 
-            <div>
-              <a
-                href="https://www.linkedin.com/in/prithvirajsengupta"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a
-                href="https://www.facebook.com/prithviraj.sengupta.5/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-facebook-square" aria-hidden="true"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/sengupta.prithviraj/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-              <a
-                href="https://www.youtube.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-youtube-square" aria-hidden="true"></i>
-              </a>
-              <a
-                href="https://x.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-            </div>
-
+            <LinkComponent />
             <div className="back-form">
               <div className="img-back">
-                <h4>Feel free to send me an email</h4>
-                <img src={contactMeBackground} alt="background not found" />
+                <div className="img-heading">Feel free to send me an email</div>
+                <img
+                  src={contactMeBackground}
+                  alt="background not found"
+                  aria-hidden="true"
+                />
               </div>
 
               <form onSubmit={submitForm}>
                 <p>{banner}</p>
                 <label htmlFor="name">Name</label>
-                <input type="text" onChange={handleName} value={name} />
+                <input
+                  id="name"
+                  type="text"
+                  onChange={handleName}
+                  value={name}
+                />
 
                 <label htmlFor="email">Email</label>
-                <input type="email" onChange={handleEmail} value={email} />
+                <input
+                  id="email"
+                  type="email"
+                  onChange={handleEmail}
+                  value={email}
+                />
 
                 <label htmlFor="message">Message</label>
-                <textarea onChange={handleMessage} value={message} />
+                <textarea
+                  id="message"
+                  onChange={handleMessage}
+                  value={message}
+                />
 
                 <div className="send-btn">
                   {bool ? (

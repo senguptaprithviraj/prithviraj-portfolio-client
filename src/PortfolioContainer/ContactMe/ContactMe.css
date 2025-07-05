@@ -14,6 +14,8 @@
   flex-direction: column;
   justify-content: center;
   background-color: #1f2235;
+  border: 0.313rem solid var(--highlighted-blue);
+  mask: radial-gradient(2.5rem at 2.5rem 2.5rem, #0000 98%, #000) -2.5rem -2.5rem;
 }
 
 .central-form h2 {
@@ -23,6 +25,9 @@
   margin-bottom: 20px;
 }
 
+.central-form-container {
+  padding: 20px;
+}
 .back-form {
   max-width: 380px;
   margin: 0 auto;
@@ -33,7 +38,7 @@
   margin-bottom: 20px;
 }
 
-.img-back h4 {
+.img-back .img-heading {
   letter-spacing: 0.3rem;
   font-weight: 400;
   color: white;

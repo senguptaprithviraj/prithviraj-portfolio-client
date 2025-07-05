@@ -1,11 +1,9 @@
 import "./AboutMe.css";
 
 import ScreenHeading from "../../component/ScreenHeading";
-import ScrollService, { FadeInScreenType } from "../../utilities/scrollService";
-import Animations from "../../utilities/animations";
 import type { ScreenComponentType } from "../../utilities/commonUtils";
 
-import aboutMeImage from "../../assets/about-me/about-me-image.png";
+import aboutMeImage from "../../assets/about-me/about-me-image.webp";
 
 const highlightTextList: string[] = [
   "Create an interactive front-end based on the provided design.",

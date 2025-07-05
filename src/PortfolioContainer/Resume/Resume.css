@@ -54,7 +54,7 @@
   display: flex;
   align-items: center;
   /* cursor: pointer; */
-  background-color: var(--secondary-blue);
+  background-color: var(--primary-blue);
   height: 2.5rem;
   margin: 0.938rem 0;
   padding: 0 0.5rem;
@@ -78,7 +78,7 @@
   width: 2.125rem;
   height: 100%;
   z-index: 1;
-  background-color: var(--secondary-blue);
+  background-color: var(--primary-blue);
   position: absolute;
 }
 
