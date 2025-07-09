@@ -2,7 +2,7 @@ import "./ProjectCarousal.css";
 
 import { useRef } from "react";
 import { motion } from "framer-motion";
-import { showcaseProjects } from "./ProjectCarousalMetadata";
+import { Project, showcaseProjects } from "./ProjectCarousalMetadata";
 // import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const ProjectCarousal = () => {
@@ -25,6 +25,11 @@ const ProjectCarousal = () => {
     return -(contentWidth * (showcaseProjects.length - 3));
   };
 
+  const handleCarousalClick = (project: Project) => {
+    if (project.href) {
+      window.location.href = project.href;
+    }
+  };
   return (
     <div className="project-carousel-container">
       <button
@@ -49,6 +54,9 @@ const ProjectCarousal = () => {
               key={`showcasedProject${index}`}
               className={`carousel-card`}
               whileHover={{ scale: 1.05 }}
+              onClick={() => {
+                handleCarousalClick(project);
+              }}
             >
               <div className="card-content" ref={cardContentRef}>
                 <img
